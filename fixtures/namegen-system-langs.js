@@ -13,7 +13,7 @@ module.exports = [
       }
     },
     methods: [
-      { methodName: setUser, args: ['admin'] }
+      { methodName: 'setUser', args: ['admin'] }
     ]
   }
 ];
