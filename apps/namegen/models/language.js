@@ -28,8 +28,8 @@ languageSchema.methods.setUser = async function(username) {
 };
 
 languageSchema.methods.getNames = function(type, amount) {
-  var code = `${this.user.username}_${this.name}_${this.type}`;
-  marklar.nameList[code] = this.seeds[type].split(/\w/);
+  var code = `${this.user.username}_${this.name}_${type}`;
+  marklar.nameList[code] = this.seeds[type].split(',');
   return marklar.getNames(code, amount);
 };
 

@@ -1,0 +1,2 @@
+
+this.DEFAULT_NAME_LIST_SIZE = 10;
