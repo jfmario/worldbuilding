@@ -118,10 +118,10 @@ module.exports = [
       isPublic: true,
       seeds: {
         maleName: getSeed('asani', 'maleName'),
-        femaleName: getSeed('asani', 'maleName'),
+        femaleName: getSeed('asani', 'femaleName'),
         surname: getSeed('asani', 'maleName'),
         cityName: getSeed('asani', 'cityName'),
-        provinceName: getSeed('asani', 'maleName') + getSeed('asani', 'cityName')
+        provinceName: getSeed('asani', 'femaleName') + getSeed('asani', 'cityName')
       }
     },
     methods: [
@@ -136,10 +136,10 @@ module.exports = [
       isPublic: true,
       seeds: {
         maleName: getSeed('denali', 'maleName'),
-        femaleName: getSeed('denali', 'maleName'),
+        femaleName: getSeed('denali', 'femaleName'),
         surname: getSeed('denali', 'maleName'),
         cityName: getSeed('denali', 'cityName'),
-        provinceName: getSeed('denali', 'maleName') + getSeed('denali', 'cityName')
+        provinceName: getSeed('denali', 'femaleName') + getSeed('denali', 'cityName')
       }
     },
     methods: [
@@ -154,10 +154,10 @@ module.exports = [
       isPublic: true,
       seeds: {
         maleName: getSeed('quarol', 'maleName'),
-        femaleName: getSeed('quarol', 'maleName'),
+        femaleName: getSeed('quarol', 'femaleName'),
         surname: getSeed('quarol', 'maleName'),
         cityName: getSeed('quarol', 'cityName'),
-        provinceName: getSeed('quarol', 'maleName') + getSeed('quarol', 'cityName')
+        provinceName: getSeed('quarol', 'femaleName') + getSeed('quarol', 'cityName')
       }
     },
     methods: [
@@ -172,10 +172,100 @@ module.exports = [
       isPublic: true,
       seeds: {
         maleName: getSeed('rubaghi', 'maleName'),
-        femaleName: getSeed('rubaghi', 'maleName'),
+        femaleName: getSeed('rubaghi', 'femaleName'),
         surname: getSeed('rubaghi', 'maleName'),
         cityName: getSeed('rubaghi', 'cityName'),
-        provinceName: getSeed('rubaghi', 'maleName') + getSeed('rubaghi', 'cityName')
+        provinceName: getSeed('rubaghi', 'femaleName') + getSeed('rubaghi', 'cityName')
+      }
+    },
+    methods: [
+      { methodName: 'setUser', args: ['admin'] }
+    ]
+  },
+  {
+    model: { app: 'namegen', model: 'Language' },
+    fields: {
+      name: 'Zeshnon',
+      description: "The language of Adzechno, Tevlid, and Ghosa.",
+      isPublic: true,
+      seeds: {
+        maleName: getSeed('zeshnon', 'maleName'),
+        femaleName: getSeed('zeshnon', 'femaleName'),
+        surname: getSeed('zeshnon', 'maleName'),
+        cityName: getSeed('zeshnon', 'cityName'),
+        provinceName: getSeed('zeshnon', 'femaleName') + getSeed('zeshnon', 'cityName')
+      }
+    },
+    methods: [
+      { methodName: 'setUser', args: ['admin'] }
+    ]
+  },
+  {
+    model: { app: 'namegen', model: 'Language' },
+    fields: {
+      name: 'Geisht',
+      description: "The language of Geisnaicru.",
+      isPublic: true,
+      seeds: {
+        maleName: getSeed('geisht', 'maleName'),
+        femaleName: getSeed('geisht', 'femaleName'),
+        surname: getSeed('geisht', 'maleName'),
+        cityName: getSeed('geisht', 'cityName'),
+        provinceName: getSeed('geisht', 'femaleName') + getSeed('geisht', 'cityName')
+      }
+    },
+    methods: [
+      { methodName: 'setUser', args: ['admin'] }
+    ]
+  },
+  {
+    model: { app: 'namegen', model: 'Language' },
+    fields: {
+      name: 'Rodic',
+      description: "The language of ancient Rodiya.",
+      isPublic: true,
+      seeds: {
+        maleName: getSeed('rodic', 'maleName'),
+        femaleName: getSeed('rodic', 'femaleName'),
+        surname: getSeed('rodic', 'maleName'),
+        cityName: getSeed('rodic', 'maleName'),
+        provinceName: getSeed('rodic', 'femaleName') + getSeed('rodic', 'femaleName')
+      }
+    },
+    methods: [
+      { methodName: 'setUser', args: ['admin'] }
+    ]
+  },
+  {
+    model: { app: 'namegen', model: 'Language' },
+    fields: {
+      name: 'Ravanpak',
+      description: "The language of ancient Ravanpalos.",
+      isPublic: true,
+      seeds: {
+        maleName: getSeed('ravanpak', 'maleName'),
+        femaleName: getSeed('ravanpak', 'femaleName'),
+        surname: getSeed('ravanpak', 'maleName'),
+        cityName: getSeed('ravanpak', 'cityName'),
+        provinceName: getSeed('ravanpak', 'femaleName') + getSeed('ravanpak', 'femaleName')
+      }
+    },
+    methods: [
+      { methodName: 'setUser', args: ['admin'] }
+    ]
+  },
+  {
+    model: { app: 'namegen', model: 'Language' },
+    fields: {
+      name: 'Nidric',
+      description: "The language of ancient Nidor.",
+      isPublic: true,
+      seeds: {
+        maleName: getSeed('nidric', 'maleName'),
+        femaleName: getSeed('nidric', 'femaleName'),
+        surname: getSeed('nidric', 'maleName'),
+        cityName: getSeed('nidric', 'cityName'),
+        provinceName: getSeed('nidric', 'femaleName') + getSeed('nidric', 'cityName')
       }
     },
     methods: [
