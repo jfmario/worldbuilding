@@ -10,6 +10,7 @@ class ViewLanguage extends Component {
 
     super(props);
 
+    this.getNames = this.getNames.bind(this);
     this.state = {
       languageId: props.match.params.languageId,
       language: null,
@@ -97,6 +98,10 @@ class ViewLanguage extends Component {
         <p className="lead">{this.state.languageDesc}</p>
 
         <h4>Names</h4>
+
+        <br />
+
+        <p><button className="btn btn-success" onClick={this.getNames}>Re-roll</button></p>
 
         <div className="row">
           <div className="col-md-4">

@@ -1,1 +1,33 @@
-p Ok
+extends ./base.pug 
+
+block css
+  link(rel="stylesheet" href="/static/SITE/css/bootstrap.min.css")
+
+block body
+  
+  .container
+    nav.navbar.navbar-expand-sm.navbar-light.bg-light
+      
+      a.navbar-brand(href="/") Worldbuilding Suite
+      
+      .navbar-collapse.collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href="/auth") Account
+          li.nav-item
+            a.nav-link(href="/namegen") Name Generation
+    
+    br
+    br
+    
+    
+    .row
+      .col-sm-4
+        .card.card-block
+          .card-body
+            h3.card-title Name Generator
+            
+            p.card-text A name generator based on custom languages.
+            
+            p
+              a.btn.btn-lg.btn-primary(href="/namegen") ENTER

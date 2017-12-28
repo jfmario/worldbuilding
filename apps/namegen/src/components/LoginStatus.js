@@ -22,6 +22,11 @@ class LoginStatus extends Component {
       isLoggedIn: loginStatus,
       username: CarolinaAuth.currentUser
     });
+
+    // drop next into localStorage
+    if (!loginStatus) {
+      window.localStorage.setItem('carolinaNext', '/namegen');
+    }
   }
 
   render() {
@@ -40,7 +45,7 @@ class LoginStatus extends Component {
       return(
         <div className="bg-danger card text-white mb-3">
           <div className="card-body">
-          
+
             <p>
               You are not logged in.
             </p>

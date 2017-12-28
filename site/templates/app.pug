@@ -7,6 +7,19 @@ block css
   if locals.customCss
     link(rel="stylesheet" href="/static/css/" + appName + ".css")
 block body
+  
+  .container
+    nav.navbar.navbar-expand-sm.navbar-light.bg-light
+      
+      a.navbar-brand(href="/") Worldbuilding Suite
+      
+      .navbar-collapse.collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href="/auth") Account
+          li.nav-item
+            a.nav-link(href="/namegen") Name Generation
+  
   #root
 block js
   if locals.jsFiles
