@@ -3,8 +3,15 @@ this.SITE = {
   // mongodb configuration
   db: {
     host: 'localhost',
-    name: 'carolina',
+    name: 'worldbuilding',
     port: 27017
+  },
+  runConfig: {
+    'default': {
+      port: 8001
+    },
+    dev: { port: 8001 },
+    prod: { port: 80 }
   },
   email: {
     address: 'webmaster@example.com',
